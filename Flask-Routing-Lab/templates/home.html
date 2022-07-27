@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <style type="text/css">
-        body {background-color: beige ;}
         #redd{
             color: red;
         }
@@ -20,15 +19,41 @@
         #h2{
             color: black;
         }
+        .pic{
+            margin: 25px;
+            border: 6px solid black;
+        }
+        .head{
+            text-align: center;
+        }
+        body {background-color: #6B9AC4 ;}
     </style>
 </head>
 <body>
-    <h1><b id="redd">e</b>
+    <h1 class="head"><b id="redd">e</b>
         <b id="bluee">b</b>
         <b id="yelloww">a</b>
         <b id="greenn">y</b>
     </h1>
-    <h2 id="h2"> welcome to ebay!!  enjoy shoping
+    <h2 class="head" id="h2"> welcome to <b id="redd">e</b>
+        <b id="bluee">b</b>
+        <b id="yelloww">a</b>
+        <b id="greenn">y</b>!!  enjoy shoping
     </h2>
+    <div>
+        <a href="{{ url_for('airphones')}}">
+            <img class="pic" src="/static/airphones.jpg">
+        </a>
+        <a href="{{ url_for('iphone')}}">
+            <img  class="pic" src="/static/iphone13.jpg">
+        </a>
+        <a href="{{ url_for('barcelona_shirt')}}">
+            <img class="pic" src="/static/barcelona.jpg">
+        </a>
+        <a href="{{ url_for('macbook')}}">
+            <img class="pic" src="/static/macbook.jpg">
+        </a>
+        <a href="{{ url_for('macbook')}}"></a>
+    </div>
 </body>
 </html>
